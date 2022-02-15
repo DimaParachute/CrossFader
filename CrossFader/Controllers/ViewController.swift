@@ -8,12 +8,14 @@
 import UIKit
 import MobileCoreServices
 import AVFAudio
+import Cephalopod
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIDocumentPickerDelegate {
     
     private var audioData = AudioData()
-    var firstAudioPlayer: AVAudioPlayer!
-    var secondAudioPlayer: AVAudioPlayer!
+    private var firstAudioPlayer: AVAudioPlayer!
+    private var secondAudioPlayer: AVAudioPlayer!
+    lazy private var cephalopod = Cephalopod(player: self.secondAudioPlayer)
     
     private lazy var firstDocumentPickerController = UIDocumentPickerViewController(
         forOpeningContentTypes: audioData.types)
@@ -27,7 +29,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIDocume
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     //MARK: - methods
@@ -83,14 +84,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIDocume
     
     private func startAudio() {
         firstAudioPlayer.play()
+        firstAudioPlayer.volume = AVAudioSession.sharedInstance().outputVolume
         DispatchQueue.main.asyncAfter(deadline: .now() + (firstAudioPlayer.duration - audioData.fadeValue)) { [self] in
             firstAudioPlayer.setVolume(0.0, fadeDuration: audioData.fadeValue)
             secondAudioPlayer.play()
+            secondAudioPlayer.volume = 0
+            cephalopod.fadeIn(duration: audioData.fadeValue)
             DispatchQueue.main.asyncAfter(deadline: .now() + (secondAudioPlayer.duration)) {
                 startAudio()
             }
-            secondAudioPlayer.setVolume(0.0, fadeDuration: 0)
-            secondAudioPlayer.setVolume(AVAudioSession.sharedInstance().outputVolume, fadeDuration: audioData.fadeValue)
         }
     }
     
@@ -119,11 +121,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIDocume
     @IBAction func playTouched(_ sender: Any) {
         prepareForFirstAudio()
         prepareForSecondAudio()
-        guard firstAudioPlayer == nil || secondAudioPlayer == nil else {
+        if firstAudioPlayer != nil || secondAudioPlayer != nil {
             startAudio()
-            return
+        } else {
+            alertInitialize(message: audioData.alertMessage)
         }
-        alertInitialize(message: audioData.alertMessage)
     }
 }
 
