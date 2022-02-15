@@ -77,13 +77,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg5-ke-Duv">
-                                <rect key="frame" x="7" y="722" width="10" height="21"/>
+                                <rect key="frame" x="9" y="722" width="10" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" systemColor="systemTealColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-Kd-MaC">
-                                <rect key="frame" x="392" y="722" width="18" height="21"/>
+                                <rect key="frame" x="391" y="722" width="18" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" systemColor="systemTealColor"/>
@@ -101,13 +101,13 @@
                             <constraint firstAttribute="bottomMargin" secondItem="yx9-9N-LLl" secondAttribute="bottom" constant="30" id="PLN-kl-5iQ"/>
                             <constraint firstItem="yx9-9N-LLl" firstAttribute="top" secondItem="fod-Fs-LeK" secondAttribute="bottom" constant="30" id="ZGg-zB-stB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dg5-ke-Duv" secondAttribute="bottom" constant="119" id="aV8-Kk-Gqc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Np-Kd-MaC" secondAttribute="trailing" constant="4" id="c1k-9t-ngx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Np-Kd-MaC" secondAttribute="trailing" constant="5" id="c1k-9t-ngx"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="yLI-zp-wZO" secondAttribute="bottom" constant="30" id="cFA-kH-EXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yx9-9N-LLl" secondAttribute="trailing" constant="30" id="cfV-VL-dja"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="Hrk-5i-vHz" secondAttribute="bottom" constant="30" id="dSu-eq-Ve4"/>
                             <constraint firstItem="ojI-di-xIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="mxJ-Hw-ucz"/>
                             <constraint firstItem="yx9-9N-LLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nCT-sA-9em"/>
-                            <constraint firstItem="dg5-ke-Duv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="zDv-P3-pMY"/>
+                            <constraint firstItem="dg5-ke-Duv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="zDv-P3-pMY"/>
                         </constraints>
                     </view>
                     <connections>
