@@ -16,8 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fod-Fs-LeK">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="2" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fod-Fs-LeK">
                                 <rect key="frame" x="28" y="722" width="358" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemGray5Color"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jVm-5B-b9w"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zp-wZO">
                                 <rect key="frame" x="30" y="642" width="150" height="50"/>
@@ -25,9 +30,26 @@
                                     <constraint firstAttribute="height" constant="50" id="k9F-UP-Z09"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Select first mp3 file"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select first mp3 file">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="selectFirstFileTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61n-ct-RfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-5i-vHz">
+                                <rect key="frame" x="212" y="642" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jcb-Be-367"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select second mp3 file">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectSecondFileTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7U-Oo-2Hr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-9N-LLl">
@@ -36,46 +58,55 @@
                                     <constraint firstAttribute="height" constant="50" id="qKR-di-fFb"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-5i-vHz">
-                                <rect key="frame" x="212" y="642" width="172" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Jcb-Be-367"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Select second mp3 file"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="selectSecondFileTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7U-Oo-2Hr"/>
+                                    <action selector="playTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AsH-UU-Ah5"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ojI-di-xIf">
+                                <rect key="frame" x="37" y="94.5" width="340" height="307"/>
+                                <color key="tintColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="1Pa-2w-2gq"/>
+                                    <constraint firstAttribute="height" constant="308" id="Z8L-bC-hCI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.070588238540000001" green="0.070588238540000001" blue="0.070588238540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yLI-zp-wZO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2b5-c2-8VE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fod-Fs-LeK" secondAttribute="trailing" constant="30" id="54i-Xr-zYY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hrk-5i-vHz" secondAttribute="trailing" constant="30" id="9t8-Q2-qUq"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IQ2-dJ-sfM"/>
+                            <constraint firstItem="ojI-di-xIf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ojy-In-b5t"/>
                             <constraint firstAttribute="bottomMargin" secondItem="yx9-9N-LLl" secondAttribute="bottom" constant="30" id="PLN-kl-5iQ"/>
                             <constraint firstItem="yx9-9N-LLl" firstAttribute="top" secondItem="fod-Fs-LeK" secondAttribute="bottom" constant="30" id="ZGg-zB-stB"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="yLI-zp-wZO" secondAttribute="bottom" constant="30" id="cFA-kH-EXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yx9-9N-LLl" secondAttribute="trailing" constant="30" id="cfV-VL-dja"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="Hrk-5i-vHz" secondAttribute="bottom" constant="30" id="dSu-eq-Ve4"/>
                             <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="hpV-zJ-LFa"/>
+                            <constraint firstItem="ojI-di-xIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="mxJ-Hw-ucz"/>
                             <constraint firstItem="yx9-9N-LLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nCT-sA-9em"/>
                             <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="xrQ-WP-iZF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fadeValueSlider" destination="fod-Fs-LeK" id="0Cr-QC-Vep"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
