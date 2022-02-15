@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrossFader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fod-Fs-LeK">
+                                <rect key="frame" x="28" y="722" width="358" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zp-wZO">
+                                <rect key="frame" x="30" y="642" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k9F-UP-Z09"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select first mp3 file"/>
+                                <connections>
+                                    <action selector="selectFirstFileTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61n-ct-RfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-9N-LLl">
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qKR-di-fFb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-5i-vHz">
+                                <rect key="frame" x="212" y="642" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jcb-Be-367"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Select second mp3 file"/>
+                                <connections>
+                                    <action selector="selectSecondFileTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7U-Oo-2Hr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yLI-zp-wZO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2b5-c2-8VE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fod-Fs-LeK" secondAttribute="trailing" constant="30" id="54i-Xr-zYY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hrk-5i-vHz" secondAttribute="trailing" constant="30" id="9t8-Q2-qUq"/>
+                            <constraint firstItem="fod-Fs-LeK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IQ2-dJ-sfM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yx9-9N-LLl" secondAttribute="bottom" constant="30" id="PLN-kl-5iQ"/>
+                            <constraint firstItem="yx9-9N-LLl" firstAttribute="top" secondItem="fod-Fs-LeK" secondAttribute="bottom" constant="30" id="ZGg-zB-stB"/>
+                            <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="yLI-zp-wZO" secondAttribute="bottom" constant="30" id="cFA-kH-EXQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yx9-9N-LLl" secondAttribute="trailing" constant="30" id="cfV-VL-dja"/>
+                            <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="Hrk-5i-vHz" secondAttribute="bottom" constant="30" id="dSu-eq-Ve4"/>
+                            <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="hpV-zJ-LFa"/>
+                            <constraint firstItem="yx9-9N-LLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nCT-sA-9em"/>
+                            <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="xrQ-WP-iZF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

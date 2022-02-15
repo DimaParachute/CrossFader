@@ -13,6 +13,7 @@
 		6FA3460027BBCA4E0058446E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA345FE27BBCA4E0058446E /* Main.storyboard */; };
 		6FA3460227BBCA510058446E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FA3460127BBCA510058446E /* Assets.xcassets */; };
 		6FA3460527BBCA510058446E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA3460327BBCA510058446E /* LaunchScreen.storyboard */; };
+		6FA3461027BBE5270058446E /* AudioData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA3460F27BBE5270058446E /* AudioData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6FA3460127BBCA510058446E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FA3460427BBCA510058446E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FA3460627BBCA510058446E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA3460F27BBE5270058446E /* AudioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		6FA345F727BBCA4E0058446E /* CrossFader */ = {
 			isa = PBXGroup;
 			children = (
-				6FA345F827BBCA4E0058446E /* AppDelegate.swift */,
-				6FA345FA27BBCA4E0058446E /* SceneDelegate.swift */,
-				6FA345FC27BBCA4E0058446E /* ViewController.swift */,
-				6FA345FE27BBCA4E0058446E /* Main.storyboard */,
-				6FA3460127BBCA510058446E /* Assets.xcassets */,
-				6FA3460327BBCA510058446E /* LaunchScreen.storyboard */,
+				6FA3461127BBF70D0058446E /* Models */,
+				6FA3461327BBF7360058446E /* Controllers */,
+				6FA3461427BBF7440058446E /* Views */,
+				6FA3461227BBF7190058446E /* Supporting files */,
 				6FA3460627BBCA510058446E /* Info.plist */,
 			);
 			path = CrossFader;
+			sourceTree = "<group>";
+		};
+		6FA3461127BBF70D0058446E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FA3460F27BBE5270058446E /* AudioData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FA3461227BBF7190058446E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				6FA3460327BBCA510058446E /* LaunchScreen.storyboard */,
+				6FA3460127BBCA510058446E /* Assets.xcassets */,
+				6FA345F827BBCA4E0058446E /* AppDelegate.swift */,
+				6FA345FA27BBCA4E0058446E /* SceneDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		6FA3461327BBF7360058446E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FA345FC27BBCA4E0058446E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6FA3461427BBF7440058446E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FA345FE27BBCA4E0058446E /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				6FA345FD27BBCA4E0058446E /* ViewController.swift in Sources */,
 				6FA345F927BBCA4E0058446E /* AppDelegate.swift in Sources */,
+				6FA3461027BBE5270058446E /* AudioData.swift in Sources */,
 				6FA345FB27BBCA4E0058446E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrossFader/CrossFader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrossFader/CrossFader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
