@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="2" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fod-Fs-LeK">
-                                <rect key="frame" x="28" y="722" width="358" height="31"/>
+                                <rect key="frame" x="28" y="717" width="358" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" systemColor="systemGray5Color"/>
                                 <connections>
@@ -25,9 +25,10 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-zp-wZO">
-                                <rect key="frame" x="30" y="642" width="150" height="50"/>
+                                <rect key="frame" x="30" y="627" width="120" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="k9F-UP-Z09"/>
+                                    <constraint firstAttribute="width" constant="120" id="SuI-1D-v99"/>
+                                    <constraint firstAttribute="height" constant="60" id="k9F-UP-Z09"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Select first mp3 file">
@@ -39,9 +40,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrk-5i-vHz">
-                                <rect key="frame" x="212" y="642" width="172" height="50"/>
+                                <rect key="frame" x="264" y="627" width="120" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Jcb-Be-367"/>
+                                    <constraint firstAttribute="height" constant="60" id="Jcb-Be-367"/>
+                                    <constraint firstAttribute="width" constant="120" id="MLt-lp-hRl"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Select second mp3 file">
@@ -53,9 +55,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-9N-LLl">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <rect key="frame" x="30" y="777" width="354" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="qKR-di-fFb"/>
+                                    <constraint firstAttribute="height" constant="55" id="qKR-di-fFb"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play">
@@ -67,11 +69,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ojI-di-xIf">
-                                <rect key="frame" x="37" y="94.5" width="340" height="307"/>
+                                <rect key="frame" x="57" y="74.5" width="300" height="279"/>
                                 <color key="tintColor" red="1" green="0.86665469409999996" blue="0.17664569620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="340" id="1Pa-2w-2gq"/>
-                                    <constraint firstAttribute="height" constant="308" id="Z8L-bC-hCI"/>
+                                    <constraint firstAttribute="width" constant="300" id="1Pa-2w-2gq"/>
+                                    <constraint firstAttribute="height" constant="280" id="Z8L-bC-hCI"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -88,10 +90,8 @@
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="yLI-zp-wZO" secondAttribute="bottom" constant="30" id="cFA-kH-EXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yx9-9N-LLl" secondAttribute="trailing" constant="30" id="cfV-VL-dja"/>
                             <constraint firstItem="fod-Fs-LeK" firstAttribute="top" secondItem="Hrk-5i-vHz" secondAttribute="bottom" constant="30" id="dSu-eq-Ve4"/>
-                            <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="hpV-zJ-LFa"/>
-                            <constraint firstItem="ojI-di-xIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="mxJ-Hw-ucz"/>
+                            <constraint firstItem="ojI-di-xIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="mxJ-Hw-ucz"/>
                             <constraint firstItem="yx9-9N-LLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nCT-sA-9em"/>
-                            <constraint firstItem="Hrk-5i-vHz" firstAttribute="leading" secondItem="yLI-zp-wZO" secondAttribute="trailing" constant="32" id="xrQ-WP-iZF"/>
                         </constraints>
                     </view>
                     <connections>
