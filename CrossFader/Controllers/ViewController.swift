@@ -121,7 +121,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIDocume
     @IBAction func playTouched(_ sender: Any) {
         prepareForFirstAudio()
         prepareForSecondAudio()
-        if firstAudioPlayer != nil || secondAudioPlayer != nil {
+        if firstAudioPlayer != nil && secondAudioPlayer != nil {
             startAudio()
         } else {
             alertInitialize(message: audioData.alertMessage)
