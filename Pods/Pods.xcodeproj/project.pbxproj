@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C6BC357D63E288843925A9FC636F7AD /* Cephalopod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18B8F28EDCEAC79F201FE7E5C64A39 /* Cephalopod-dummy.m */; };
+		39112AA29E7239DA50090E8C14B44CF2 /* AutoCancellingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B28C15B92B914C6C6EB1593A492046 /* AutoCancellingTimer.swift */; };
+		7DED443EF4EFF1724F9046D90A273A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83B8E8B34A20B12684BCA411C1754D85 /* Cephalopod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2950C7C8A194DC82D986954C45D5BB7 /* Cephalopod.swift */; };
+		99AFE8E66D3C2B876D2FDD2A30BD7530 /* Pods-CrossFader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB2D9AE2C0CC92F654C22984460D50B8 /* Pods-CrossFader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3FA4DDEBF1555AB7C01B874D5B87CCE /* Pods-CrossFader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AFD37AFE23CEC019340363EB42DF6 /* Pods-CrossFader-dummy.m */; };
+		DE6FC1D538F231D8B104A71C6B3141B9 /* Cephalopod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 216A98F7F26295F1C9BA4EC32B5ECA26 /* Cephalopod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBADB880FF97ABF7BB6B36416517E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D787D1B0C31D35FF21BC68277514CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64E35BACCE45DCFB43ADE1F57AD72E4;
+			remoteInfo = Cephalopod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		144AFD37AFE23CEC019340363EB42DF6 /* Pods-CrossFader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrossFader-dummy.m"; sourceTree = "<group>"; };
+		20CF6A4A7F134858ED9FED427F069896 /* Cephalopod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cephalopod.debug.xcconfig; sourceTree = "<group>"; };
+		216A98F7F26295F1C9BA4EC32B5ECA26 /* Cephalopod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cephalopod-umbrella.h"; sourceTree = "<group>"; };
+		21B65C544F92136D4C3E0A6CBE099FA2 /* Cephalopod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cephalopod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D645BB6B603E853C5A09C30B48142F /* Cephalopod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cephalopod.release.xcconfig; sourceTree = "<group>"; };
+		392593CB9C9CE89E527CBD0E1B882A15 /* Cephalopod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cephalopod.modulemap; sourceTree = "<group>"; };
+		49B28C15B92B914C6C6EB1593A492046 /* AutoCancellingTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoCancellingTimer.swift; path = Cephalopod/AutoCancellingTimer.swift; sourceTree = "<group>"; };
+		60631EAEC4CD7DF0A88431FE3D7F3229 /* Cephalopod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cephalopod-Info.plist"; sourceTree = "<group>"; };
+		64AB150E2098A545A6ACE2CEB8754A77 /* Pods-CrossFader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CrossFader.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A18B8F28EDCEAC79F201FE7E5C64A39 /* Cephalopod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cephalopod-dummy.m"; sourceTree = "<group>"; };
+		91B5186EF200681F78EFD91863F3F6C8 /* Pods-CrossFader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CrossFader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B76CDC8807C4CAA4CB95948C06E46E /* Pods-CrossFader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrossFader-frameworks.sh"; sourceTree = "<group>"; };
+		B54628B263AAF112D7A7D3FA7C0041F4 /* Pods-CrossFader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrossFader.release.xcconfig"; sourceTree = "<group>"; };
+		BD961969E48DA0613BFC8ACF6CA05665 /* Pods-CrossFader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrossFader-Info.plist"; sourceTree = "<group>"; };
+		C15840E04A94505BD30526926B6E0A29 /* Pods-CrossFader */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CrossFader"; path = Pods_CrossFader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0488F33640FA75BC10E6FC3C7583258 /* Cephalopod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cephalopod-prefix.pch"; sourceTree = "<group>"; };
+		DF201FC8F987DEF0BB242AE7EA9BC729 /* Pods-CrossFader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrossFader-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2950C7C8A194DC82D986954C45D5BB7 /* Cephalopod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cephalopod.swift; path = Cephalopod/Cephalopod.swift; sourceTree = "<group>"; };
+		F5C019507A77CF87FB327C38CA81C893 /* Pods-CrossFader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrossFader.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2D9AE2C0CC92F654C22984460D50B8 /* Pods-CrossFader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CrossFader-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07E80CFB228C5F854E78CEA58B413BE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DED443EF4EFF1724F9046D90A273A54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B697DE6DCADE11DC753CABC62527DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBADB880FF97ABF7BB6B36416517E495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25AA0BE365B20DF8A4DF9D14EE2850D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B840EBDCD743D5D97C60718EC9999657 /* Pods-CrossFader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D51D09F04552CD17B38AE33A8A624EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B65C544F92136D4C3E0A6CBE099FA2 /* Cephalopod.framework */,
+				C15840E04A94505BD30526926B6E0A29 /* Pods-CrossFader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		410B6F81AC2942F2BBA830A576527407 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				392593CB9C9CE89E527CBD0E1B882A15 /* Cephalopod.modulemap */,
+				8A18B8F28EDCEAC79F201FE7E5C64A39 /* Cephalopod-dummy.m */,
+				60631EAEC4CD7DF0A88431FE3D7F3229 /* Cephalopod-Info.plist */,
+				D0488F33640FA75BC10E6FC3C7583258 /* Cephalopod-prefix.pch */,
+				216A98F7F26295F1C9BA4EC32B5ECA26 /* Cephalopod-umbrella.h */,
+				20CF6A4A7F134858ED9FED427F069896 /* Cephalopod.debug.xcconfig */,
+				26D645BB6B603E853C5A09C30B48142F /* Cephalopod.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cephalopod";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6F23E8F65464E6D1D61B18BB120378A0 /* Cephalopod */ = {
+			isa = PBXGroup;
+			children = (
+				49B28C15B92B914C6C6EB1593A492046 /* AutoCancellingTimer.swift */,
+				E2950C7C8A194DC82D986954C45D5BB7 /* Cephalopod.swift */,
+				410B6F81AC2942F2BBA830A576527407 /* Support Files */,
+			);
+			path = Cephalopod;
+			sourceTree = "<group>";
+		};
+		B840EBDCD743D5D97C60718EC9999657 /* Pods-CrossFader */ = {
+			isa = PBXGroup;
+			children = (
+				64AB150E2098A545A6ACE2CEB8754A77 /* Pods-CrossFader.modulemap */,
+				91B5186EF200681F78EFD91863F3F6C8 /* Pods-CrossFader-acknowledgements.markdown */,
+				DF201FC8F987DEF0BB242AE7EA9BC729 /* Pods-CrossFader-acknowledgements.plist */,
+				144AFD37AFE23CEC019340363EB42DF6 /* Pods-CrossFader-dummy.m */,
+				A0B76CDC8807C4CAA4CB95948C06E46E /* Pods-CrossFader-frameworks.sh */,
+				BD961969E48DA0613BFC8ACF6CA05665 /* Pods-CrossFader-Info.plist */,
+				FB2D9AE2C0CC92F654C22984460D50B8 /* Pods-CrossFader-umbrella.h */,
+				F5C019507A77CF87FB327C38CA81C893 /* Pods-CrossFader.debug.xcconfig */,
+				B54628B263AAF112D7A7D3FA7C0041F4 /* Pods-CrossFader.release.xcconfig */,
+			);
+			name = "Pods-CrossFader";
+			path = "Target Support Files/Pods-CrossFader";
+			sourceTree = "<group>";
+		};
+		CAF8384BF0E74B6D34718073F76A18C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F23E8F65464E6D1D61B18BB120378A0 /* Cephalopod */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CAF8384BF0E74B6D34718073F76A18C4 /* Pods */,
+				3D51D09F04552CD17B38AE33A8A624EB /* Products */,
+				25AA0BE365B20DF8A4DF9D14EE2850D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		72D766346DB499D594D3AE512B8E67E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6FC1D538F231D8B104A71C6B3141B9 /* Cephalopod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C33F5A8F4BF71A2B35C2026EC824CC67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AFE8E66D3C2B876D2FDD2A30BD7530 /* Pods-CrossFader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B07591C42AB1C1B9DA8485C52A3C4A7 /* Pods-CrossFader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1051BAD90715C44349A712F1E67DAC1D /* Build configuration list for PBXNativeTarget "Pods-CrossFader" */;
+			buildPhases = (
+				C33F5A8F4BF71A2B35C2026EC824CC67 /* Headers */,
+				778D693D4376A28E41752F9FC0ACA609 /* Sources */,
+				55B697DE6DCADE11DC753CABC62527DE /* Frameworks */,
+				A8631C4754B12D8E2A0ECDB519A0D82B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C56EBE3FA6791420C729EAAEDF31FDF /* PBXTargetDependency */,
+			);
+			name = "Pods-CrossFader";
+			productName = Pods_CrossFader;
+			productReference = C15840E04A94505BD30526926B6E0A29 /* Pods-CrossFader */;
+			productType = "com.apple.product-type.framework";
+		};
+		E64E35BACCE45DCFB43ADE1F57AD72E4 /* Cephalopod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B2F8F55F7A22F5682925B8839C25A8 /* Build configuration list for PBXNativeTarget "Cephalopod" */;
+			buildPhases = (
+				72D766346DB499D594D3AE512B8E67E5 /* Headers */,
+				1658A014478CD0271FA0F194150185C3 /* Sources */,
+				07E80CFB228C5F854E78CEA58B413BE2 /* Frameworks */,
+				69BB7A9BF047683A8763BF0AC4D0F807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cephalopod;
+			productName = Cephalopod;
+			productReference = 21B65C544F92136D4C3E0A6CBE099FA2 /* Cephalopod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3D51D09F04552CD17B38AE33A8A624EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E64E35BACCE45DCFB43ADE1F57AD72E4 /* Cephalopod */,
+				8B07591C42AB1C1B9DA8485C52A3C4A7 /* Pods-CrossFader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69BB7A9BF047683A8763BF0AC4D0F807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8631C4754B12D8E2A0ECDB519A0D82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1658A014478CD0271FA0F194150185C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39112AA29E7239DA50090E8C14B44CF2 /* AutoCancellingTimer.swift in Sources */,
+				83B8E8B34A20B12684BCA411C1754D85 /* Cephalopod.swift in Sources */,
+				2C6BC357D63E288843925A9FC636F7AD /* Cephalopod-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778D693D4376A28E41752F9FC0ACA609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FA4DDEBF1555AB7C01B874D5B87CCE /* Pods-CrossFader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C56EBE3FA6791420C729EAAEDF31FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cephalopod;
+			target = E64E35BACCE45DCFB43ADE1F57AD72E4 /* Cephalopod */;
+			targetProxy = D787D1B0C31D35FF21BC68277514CBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35E6A8CD72EFB6029668648B5BFD5C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CF6A4A7F134858ED9FED427F069896 /* Cephalopod.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cephalopod/Cephalopod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cephalopod/Cephalopod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cephalopod/Cephalopod.modulemap";
+				PRODUCT_MODULE_NAME = Cephalopod;
+				PRODUCT_NAME = Cephalopod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CE04AC71DBDADB4FD79C23D9821B6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C019507A77CF87FB327C38CA81C893 /* Pods-CrossFader.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CrossFader/Pods-CrossFader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CrossFader/Pods-CrossFader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E21316627CE6BC8FD6DB31A0A6AD7B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D645BB6B603E853C5A09C30B48142F /* Cephalopod.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cephalopod/Cephalopod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cephalopod/Cephalopod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cephalopod/Cephalopod.modulemap";
+				PRODUCT_MODULE_NAME = Cephalopod;
+				PRODUCT_NAME = Cephalopod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2B82491B2FF9377024704535972B0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54628B263AAF112D7A7D3FA7C0041F4 /* Pods-CrossFader.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CrossFader/Pods-CrossFader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CrossFader/Pods-CrossFader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1051BAD90715C44349A712F1E67DAC1D /* Build configuration list for PBXNativeTarget "Pods-CrossFader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CE04AC71DBDADB4FD79C23D9821B6F8 /* Debug */,
+				E2B82491B2FF9377024704535972B0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B2F8F55F7A22F5682925B8839C25A8 /* Build configuration list for PBXNativeTarget "Cephalopod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E6A8CD72EFB6029668648B5BFD5C9F /* Debug */,
+				E21316627CE6BC8FD6DB31A0A6AD7B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
